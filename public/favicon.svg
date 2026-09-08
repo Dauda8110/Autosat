@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E85A3B"/>
+      <stop offset="100%" stop-color="#0E7A72"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer Ring -->
+  <circle cx="50" cy="50" r="46" fill="#0A0A0A" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
+  <circle cx="50" cy="50" r="42" fill="none" stroke="url(#glow)" stroke-width="1" stroke-opacity="0.6"/>
+  <!-- Geometric Stylized Monogram 'A' -->
+  <path d="M50 22 L68 74 H58 L54 62 H46 L42 74 H32 Z M50 38 L48.2 54 H51.8 Z" fill="#FFFFFF"/>
+  <circle cx="50" cy="50" r="2" fill="#E85A3B"/>
+</svg>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AUTOSAT Nigeria — Satisfying Automobile Desire</title>
+  <meta name="description" content="AUTOSAT Nigeria is a luxury car dealership in Victoria Island, Lagos. Clean sports cars, 100% genuine customs papers, and safe home delivery across Nigeria." />
+  <meta name="keywords" content="luxury cars Nigeria, buy Porsche Lagos, Ferrari Nigeria, clean cars Lagos, car dealership Victoria Island" />
+  
+  <!-- Actual Brand Favicon (Circular Logo) -->
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="AUTOSAT Nigeria — Satisfying Automobile Desire" />
+  <meta property="og:description" content="Clean luxury sports cars in Lagos, Nigeria with 100% genuine customs papers." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/images/porsche-gt3.jpg" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body>
+
+  <!-- Sticky Frosted Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="nav-inner">
+      <a href="#hero" class="brand-logo" id="nav-brand-link" aria-label="AUTOSAT Home">
+        <img src="/logo.png" alt="AUTOSAT Logo" width="38" height="38" style="border-radius: 50%; object-fit: contain; display: block;" />
+        <span class="brand-wordmark">AUTOSAT</span>
+      </a>
+
+      <!-- Desktop Nav with Simple, Friendly Names -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#inventory" class="nav-link" id="nav-inventory">Our Cars</a></li>
+          <li><a href="#why-us" class="nav-link" id="nav-why-us">Why Choose Us</a></li>
+          <li><a href="#founder" class="nav-link" id="nav-founder">About Us</a></li>
+          <li><a href="#services" class="nav-link" id="nav-services">Services</a></li>
+          <li><a href="#reviews" class="nav-link" id="nav-reviews">Reviews</a></li>
+          <li><a href="#visit" class="nav-link" id="nav-visit">Visit Showroom</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions with Official WhatsApp and Social Icons -->
+      <div class="nav-actions">
+        <!-- Social Icons -->
+        <a href="https://instagram.com/autosat.ng" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm btn-icon" title="Instagram (@autosat.ng)" aria-label="Instagram">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        </a>
+        <a href="https://tiktok.com/@autosat.ng" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm btn-icon" title="TikTok (@autosat.ng)" aria-label="TikTok">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.45a8.16 8.16 0 0 0 4.77 1.52V7.52a4.83 4.83 0 0 1-1-.83z"/></svg>
+        </a>
+
+        <!-- WhatsApp Button with Official WhatsApp Icon -->
+        <button class="btn btn-secondary btn-sm trigger-whatsapp" id="nav-whatsapp-btn" title="Chat on WhatsApp">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.69C7.02 10.9 7.9 12.07 8.02 12.23C8.14 12.39 9.72 14.99 12.22 15.96C14.31 16.77 14.73 16.61 15.18 16.57C15.63 16.53 16.63 15.98 16.84 15.4C17.05 14.81 17.05 14.31 16.99 14.21C16.93 14.1 16.76 14.04 16.51 13.92C16.26 13.79 15.03 13.19 14.8 13.11C14.58 13.02 14.41 12.98 14.25 13.23C14.08 13.48 13.61 14.04 13.46 14.21C13.32 14.37 13.17 14.39 12.92 14.27C12.67 14.14 11.87 13.88 10.92 13.03C10.18 12.37 9.68 11.56 9.54 11.31C9.39 11.06 9.52 10.93 9.65 10.8C9.76 10.69 9.9 10.51 10.02 10.36C10.15 10.22 10.19 10.12 10.27 9.95C10.35 9.79 10.31 9.64 10.25 9.52C10.19 9.4 9.72 8.24 9.52 7.77C9.33 7.31 9.14 7.37 8.99 7.36C8.85 7.36 8.69 7.33 8.53 7.33Z"/></svg>
+          WhatsApp Us
+        </button>
+        <button class="btn btn-primary btn-sm trigger-booking-modal" id="nav-booking-btn">
+          Book a Visit
+        </button>
+
+        <!-- Mobile Toggle Button -->
+        <button class="nav-toggle" id="nav-toggle-btn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div style="display: flex; flex-direction: column; gap: 2rem;">
+      <div style="display: flex; align-items: center; gap: 0.85rem;">
+        <img src="/logo.png" alt="AUTOSAT" width="42" height="42" style="border-radius: 50%; object-fit: contain;" />
+        <span class="brand-wordmark" style="font-size: 1.5rem;">AUTOSAT</span>
+      </div>
+      <span class="eyebrow-serif" style="font-size: 0.72rem;">Satisfying Automobile Desire</span>
+      <ul class="mobile-links">
+        <li><a href="#inventory" class="mobile-link">Our Cars</a></li>
+        <li><a href="#why-us" class="mobile-link">Why Choose Us</a></li>
+        <li><a href="#founder" class="mobile-link">About Us &amp; Founder</a></li>
+        <li><a href="#services" class="mobile-link">Our Services</a></li>
+        <li><a href="#reviews" class="mobile-link">Customer Reviews</a></li>
+        <li><a href="#visit" class="mobile-link">Visit Lagos Showroom</a></li>
+      </ul>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+      <button class="btn btn-primary trigger-booking-modal" style="width: 100%;">
+        Book a Showroom Visit
+      </button>
+      <button class="btn btn-secondary trigger-whatsapp" style="width: 100%;">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.69C7.02 10.9 7.9 12.07 8.02 12.23C8.14 12.39 9.72 14.99 12.22 15.96C14.31 16.77 14.73 16.61 15.18 16.57C15.63 16.53 16.63 15.98 16.84 15.4C17.05 14.81 17.05 14.31 16.99 14.21C16.93 14.1 16.76 14.04 16.51 13.92C16.26 13.79 15.03 13.19 14.8 13.11C14.58 13.02 14.41 12.98 14.25 13.23C14.08 13.48 13.61 14.04 13.46 14.21C13.32 14.37 13.17 14.39 12.92 14.27C12.67 14.14 11.87 13.88 10.92 13.03C10.18 12.37 9.68 11.56 9.54 11.31C9.39 11.06 9.52 10.93 9.65 10.8C9.76 10.69 9.9 10.51 10.02 10.36C10.15 10.22 10.19 10.12 10.27 9.95C10.35 9.79 10.31 9.64 10.25 9.52C10.19 9.4 9.72 8.24 9.52 7.77C9.33 7.31 9.14 7.37 8.99 7.36C8.85 7.36 8.69 7.33 8.53 7.33Z"/></svg>
+        WhatsApp Concierge
+      </button>
+      <div style="display: flex; gap: 0.75rem; justify-content: center; margin-top: 0.5rem;">
+        <a href="https://instagram.com/autosat.ng" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" style="flex: 1; font-size: 0.8rem;">Instagram</a>
+        <a href="https://tiktok.com/@autosat.ng" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" style="flex: 1; font-size: 0.8rem;">TikTok</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 1. Hero Section (Porsche GT3, "Satisfying Automobile Desire" headline) -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-media">
+      <img src="/images/porsche-gt3.jpg" alt="Porsche 911 GT3 Touring at AUTOSAT Lagos" fetchpriority="high" />
+    </div>
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+      <div class="hero-headlines">
+        <span class="eyebrow-serif" style="margin-bottom: 1.25rem;">AUTOSAT NIGERIA</span>
+        <h1 class="text-hero">Satisfying Automobile Desire</h1>
+        <p class="text-subhead" style="margin-top: 1.2rem;">
+          We help you find, buy, and enjoy the cleanest luxury sports cars in Nigeria with zero stress and 100% genuine customs papers.
+        </p>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#inventory" class="btn btn-primary" id="hero-explore-btn">
+          See Available Cars
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button class="btn btn-secondary trigger-booking-modal" id="hero-booking-btn">
+          Book a Showroom Visit
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Simple Promise & Facts Strip (Fixed Alignment with Dash & Clean Text) -->
+  <section class="manifesto-strip" id="manifesto">
+    <div class="container">
+      <div class="reveal">
+        <div style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
+          <span class="eyebrow-serif teal">Our Promise</span>
+        </div>
+        <h2 class="tagline-editorial manifesto-quote">
+          “We make buying your dream car in Nigeria simple, honest, and exciting.”
+        </h2>
+      </div>
+
+      <div class="metrics-strip reveal">
+        <div class="metric-block">
+          <div class="metric-number text-number" data-target="100" data-suffix="%">0%</div>
+          <div class="metric-label">Clean Nigerian Customs Papers</div>
+        </div>
+        <div class="metric-block">
+          <div class="metric-number text-number" data-target="48" data-suffix="h">0h</div>
+          <div class="metric-label">Safe Delivery to Your Door</div>
+        </div>
+        <div class="metric-block">
+          <div class="metric-number text-number" data-target="14" data-suffix="+">0+</div>
+          <div class="metric-label">Years in Business</div>
+        </div>
+        <div class="metric-block">
+          <div class="metric-number text-number" data-target="0" data-suffix=" Hidden Fees">0</div>
+          <div class="metric-label">Clear &amp; Honest Pricing</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Featured Cars (Nigerian Naira Only) -->
+  <section class="section" id="inventory">
+    <div class="container">
+      <div class="section-header" style="flex-direction: row; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1.5rem;">
+        <div>
+          <span class="eyebrow-serif">Available In Lagos</span>
+          <h2 class="text-section-title" style="margin-top: 0.5rem;">Our Cars</h2>
+          <p class="text-subhead" style="margin-top: 0.4rem;">
+            Every car is fully inspected, serviced, and ready to drive home with clean papers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Dynamic Curated Grid (NGN Only) -->
+      <div class="grid-2" id="inventory-grid">
+        <!-- Rendered by inventory.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Why Choose Us (Simple 3 Pillars) -->
+  <section class="section" id="why-us" style="background: #0D0D0D; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+    <div class="container">
+      <div class="section-header center">
+        <div style="display: flex; justify-content: center; margin-bottom: 0.5rem;">
+          <span class="eyebrow-serif teal">Simple &amp; Honest</span>
+        </div>
+        <h2 class="text-section-title">Why Buy From AUTOSAT?</h2>
+        <p class="text-subhead" style="text-align: center;">
+          No confusing car-dealer talk. Just clean cars, fair prices, and great service.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="pillar-card reveal">
+          <span class="pillar-number">01 / GENUINE PAPERS</span>
+          <h3 class="text-card-title" style="margin-bottom: 0.85rem;">100% Real Customs Duty</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            Every car comes with real Nigerian Customs papers paid in full. No fake documents, no police stops, and no headaches. You can verify everything before you pay.
+          </p>
+        </div>
+
+        <div class="pillar-card reveal reveal-delay-1">
+          <span class="pillar-number">02 / CLEAR PRICES</span>
+          <h3 class="text-card-title" style="margin-bottom: 0.85rem;">No Hidden Charges</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            The price you see is the price you pay. No sudden extra fees for documentation or delivery. We show you complete car health reports and mileage records openly.
+          </p>
+        </div>
+
+        <div class="pillar-card reveal reveal-delay-2">
+          <span class="pillar-number">03 / EASY DELIVERY</span>
+          <h3 class="text-card-title" style="margin-bottom: 0.85rem;">Delivered to Your Door</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            We safely carry your car inside a clean, covered truck straight to your house in Lagos, Abuja, Port Harcourt, or any other state in Nigeria without putting miles on it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. About Us / Founder Spotlight -->
+  <section class="section" id="founder">
+    <div class="container">
+      <div class="leadership-card reveal">
+        <div class="leadership-photo">
+          <img src="/images/ceo-portrait.jpg" alt="Marcus Babatunde Vance — Founder of AUTOSAT Nigeria" loading="lazy" />
+        </div>
+        <div class="leadership-content">
+          <span class="eyebrow-serif">Meet The Founder</span>
+          <h2 class="text-section-title" style="margin-top: 0.5rem;">Marcus Babatunde Vance</h2>
+          <span class="text-meta" style="color: var(--accent-coral); margin-top: 0.3rem;">Founder &amp; Managing Director</span>
+
+          <p class="quote-serif">
+            “Buying a great car should make you feel happy and relaxed. We choose every car in our showroom carefully, exactly like we would buy it for our own family.”
+          </p>
+
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem;">
+            Marcus has been helping car lovers and business leaders in Nigeria buy clean, top-condition cars for over 10 years. He started AUTOSAT in Lagos to give Nigerians a trustworthy place to buy luxury cars without stress.
+          </p>
+
+          <div>
+            <button class="btn btn-secondary trigger-booking-modal" data-vehicle="Chat with Marcus Vance" id="ceo-consult-btn">
+              Talk to Our Team
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Simple Services -->
+  <section class="section" id="services" style="background: #0E0E0E; border-top: 1px solid var(--border-subtle);">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow-serif teal">How We Help You</span>
+        <h2 class="text-section-title">Our Services</h2>
+        <p class="text-subhead">
+          Everything you need to buy, finance, or upgrade your car in Nigeria.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </div>
+          <h3 class="text-card-title" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Importing Your Dream Car</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5;">
+            Looking for a specific color or model from Germany, UK, or the USA? We find it, inspect it, ship it, and clear customs for you quickly.
+          </p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+          </div>
+          <h3 class="text-card-title" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Car Loans &amp; Easy Payment</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5;">
+            We work with top Nigerian banks to help you pay for your car in comfortable monthly installments that match your income.
+          </p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v1"/><path d="M18 8h4a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-4"/><circle cx="8" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+          </div>
+          <h3 class="text-card-title" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Doorstep Covered Delivery</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5;">
+            We deliver your vehicle safely in a clean covered truck directly to your gate in Lagos, Abuja, Port Harcourt, or any state.
+          </p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="text-card-title" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Sell or Upgrade Your Car</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5;">
+            Want to trade in your current car for a newer one? Bring it in. We give you a fair market value and handle all the swap paperwork smoothly.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Customer Reviews (Locked Height — No Page Jumps!) -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section-header center">
+        <div style="display: flex; justify-content: center; margin-bottom: 0.5rem;">
+          <span class="eyebrow-serif">Happy Customers</span>
+        </div>
+        <h2 class="text-section-title">What Our Customers Say</h2>
+      </div>
+
+      <div class="testimonial-box reveal">
+        <!-- Stage with locked min-height so page never shifts -->
+        <div class="testimonial-stage" id="testimonial-stage">
+          <blockquote class="testimonial-quote" id="testimonial-quote">
+            “Buying my car from AUTOSAT was very easy and stress-free. The car was delivered straight to my house in Ikoyi with all genuine customs duty papers completely sorted.”
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-name" id="testimonial-name">Dr. Oladipo Adeleke</div>
+            <div class="author-detail" id="testimonial-detail">Ikoyi, Lagos • Bought: Ferrari Roma</div>
+          </div>
+        </div>
+
+        <div class="carousel-controls" id="testimonial-dots">
+          <!-- Dots rendered by animations.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Visit Showroom & Contact Us -->
+  <section class="section" id="visit" style="border-top: 1px solid var(--border-subtle); background: #0A0A0A;">
+    <div class="container">
+      <div class="atelier-grid">
+        <!-- Showroom details & photo -->
+        <div class="reveal">
+          <span class="eyebrow-serif teal">Visit Us In Person</span>
+          <h2 class="text-section-title" style="margin: 0.5rem 0 1.5rem;">Our Lagos Showroom</h2>
+          
+          <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
+            Come visit us in Victoria Island, Lagos. Relax, inspect the cars in person, and ask any questions you have. We are friendly and happy to help you.
+          </p>
+
+          <div style="aspect-ratio: 16/9; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 2rem; border: 1px solid var(--border-subtle);">
+            <img src="/images/showroom.jpg" alt="AUTOSAT Lagos Showroom" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
+          </div>
+
+          <!-- Social Links Strip -->
+          <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 1.25rem; margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+            <div>
+              <span class="text-meta" style="color: var(--accent-coral);">Follow Our Channels</span>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.2rem;">Watch video walkarounds &amp; fresh arrivals</p>
+            </div>
+            <div style="display: flex; gap: 0.75rem;">
+              <a href="https://instagram.com/autosat.ng" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                Instagram
+              </a>
+              <a href="https://tiktok.com/@autosat.ng" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.45a8.16 8.16 0 0 0 4.77 1.52V7.52a4.83 4.83 0 0 1-1-.83z"/></svg>
+                TikTok
+              </a>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; font-size: 0.92rem;">
+            <div>
+              <span class="text-meta">Showroom Address</span>
+              <p style="font-weight: 600; margin-top: 0.35rem; color: #FFFFFF;">
+                Plot 12, Walter Carrington Crescent<br />Victoria Island, Lagos, Nigeria
+              </p>
+            </div>
+            <div>
+              <span class="text-meta">Opening Hours</span>
+              <p style="font-weight: 600; margin-top: 0.35rem; color: #FFFFFF;">
+                Monday – Saturday<br />09:30 AM – 07:00 PM
+              </p>
+            </div>
+            <div>
+              <span class="text-meta">Office Phone</span>
+              <p style="font-weight: 600; margin-top: 0.35rem;">
+                <a href="tel:+23412918800" style="color: #FFFFFF; text-decoration: none;">01 291 8800</a>
+              </p>
+            </div>
+            <div>
+              <span class="text-meta">Email</span>
+              <p style="font-weight: 600; margin-top: 0.35rem;">
+                <a href="mailto:info@autosat.ng" style="color: #FFFFFF; text-decoration: none;">info@autosat.ng</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simple Contact Form -->
+        <div class="reveal reveal-delay-1" id="contact" style="background: var(--bg-surface); padding: clamp(2rem, 4vw, 3rem); border-radius: var(--radius-lg); border: 1px solid var(--border-subtle);">
+          <span class="eyebrow-serif">Send Us A Message</span>
+          <h3 class="text-card-title" style="margin: 0.5rem 0 1.25rem;">We’d Love to Hear From You</h3>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="form-name" class="form-label">Your Name</label>
+              <input type="text" id="form-name" class="form-control" placeholder="e.g. Babatunde Adeleke" required />
+            </div>
+
+            <div class="form-group">
+              <label for="form-phone" class="form-label">Phone Number / WhatsApp</label>
+              <input type="tel" id="form-phone" class="form-control" placeholder="0800 000 0000" required />
+            </div>
+
+            <div class="form-group">
+              <label for="form-interest" class="form-label">Which Car Are You Interested In?</label>
+              <input type="text" id="form-interest" class="form-control" placeholder="e.g. Porsche 911 GT3 / Sourcing a Car" />
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Your Message or Questions</label>
+              <textarea id="form-message" rows="3" class="form-control" placeholder="Tell us what you need or when you'd like to visit..."></textarea>
+            </div>
+
+            <div style="display: flex; gap: 1rem; align-items: center; margin-top: 1.5rem;">
+              <button type="submit" class="btn btn-primary" id="btn-submit-contact" style="flex: 1;">
+                Send Message
+              </button>
+              <button type="button" class="btn btn-secondary trigger-whatsapp" title="Chat on WhatsApp">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.69C7.02 10.9 7.9 12.07 8.02 12.23C8.14 12.39 9.72 14.99 12.22 15.96C14.31 16.77 14.73 16.61 15.18 16.57C15.63 16.53 16.63 15.98 16.84 15.4C17.05 14.81 17.05 14.31 16.99 14.21C16.93 14.1 16.76 14.04 16.51 13.92C16.26 13.79 15.03 13.19 14.8 13.11C14.58 13.02 14.41 12.98 14.25 13.23C14.08 13.48 13.61 14.04 13.46 14.21C13.32 14.37 13.17 14.39 12.92 14.27C12.67 14.14 11.87 13.88 10.92 13.03C10.18 12.37 9.68 11.56 9.54 11.31C9.39 11.06 9.52 10.93 9.65 10.8C9.76 10.69 9.9 10.51 10.02 10.36C10.15 10.22 10.19 10.12 10.27 9.95C10.35 9.79 10.31 9.64 10.25 9.52C10.19 9.4 9.72 8.24 9.52 7.77C9.33 7.31 9.14 7.37 8.99 7.36C8.85 7.36 8.69 7.33 8.53 7.33Z"/></svg>
+                WhatsApp
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Simple Clean Footer with Official Social Links -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div>
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+          <img src="/logo.png" alt="AUTOSAT" width="38" height="38" style="border-radius: 50%; object-fit: contain; display: block;" />
+          <span class="brand-wordmark">AUTOSAT</span>
+        </div>
+        <p class="eyebrow-serif" style="font-size: 0.72rem; margin-bottom: 1.25rem;">Satisfying Automobile Desire</p>
+        <p style="color: var(--text-muted); font-size: 0.88rem; max-width: 320px; line-height: 1.6;">
+          Your trusted luxury car dealership in Nigeria. Clean sports cars, genuine customs duty papers, and safe delivery to your doorstep.
+        </p>
+      </div>
+
+      <div>
+        <h4 style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-pure); margin-bottom: 1.2rem;">Available Cars</h4>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.7rem; font-size: 0.88rem;">
+          <li><a href="#inventory" style="color: var(--text-muted); text-decoration: none;">Porsche GT3 Touring</a></li>
+          <li><a href="#inventory" style="color: var(--text-muted); text-decoration: none;">Ferrari Roma</a></li>
+          <li><a href="#inventory" style="color: var(--text-muted); text-decoration: none;">Aston Martin DBS</a></li>
+          <li><a href="#inventory" style="color: var(--text-muted); text-decoration: none;">Mercedes-AMG GT</a></li>
+          <li><a href="#services" style="color: var(--text-muted); text-decoration: none;">Import a Car</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-pure); margin-bottom: 1.2rem;">About Autosat</h4>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.7rem; font-size: 0.88rem;">
+          <li><a href="#why-us" style="color: var(--text-muted); text-decoration: none;">Why Choose Us</a></li>
+          <li><a href="#founder" style="color: var(--text-muted); text-decoration: none;">Our Founder</a></li>
+          <li><a href="#services" style="color: var(--text-muted); text-decoration: none;">Car Loans</a></li>
+          <li><a href="#services" style="color: var(--text-muted); text-decoration: none;">Home Delivery</a></li>
+          <li><a href="#visit" style="color: var(--text-muted); text-decoration: none;">Our Lagos Showroom</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-pure); margin-bottom: 1.2rem;">Follow Our Pages</h4>
+        <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin-bottom: 1rem;">
+          Connect with us on social media for arrival videos and live walkarounds:
+        </p>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.88rem;">
+          <li>
+            <a href="https://instagram.com/autosat.ng" target="_blank" rel="noopener noreferrer" style="color: var(--text-pure); text-decoration: none; display: inline-flex; align-items: center; gap: 0.6rem;">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              Instagram (@autosat.ng)
+            </a>
+          </li>
+          <li>
+            <a href="https://tiktok.com/@autosat.ng" target="_blank" rel="noopener noreferrer" style="color: var(--text-pure); text-decoration: none; display: inline-flex; align-items: center; gap: 0.6rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.45a8.16 8.16 0 0 0 4.77 1.52V7.52a4.83 4.83 0 0 1-1-.83z"/></svg>
+              TikTok (@autosat.ng)
+            </a>
+          </li>
+          <li>
+            <a href="#" class="trigger-whatsapp" style="color: var(--text-pure); text-decoration: none; display: inline-flex; align-items: center; gap: 0.6rem;">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.69C7.02 10.9 7.9 12.07 8.02 12.23C8.14 12.39 9.72 14.99 12.22 15.96C14.31 16.77 14.73 16.61 15.18 16.57C15.63 16.53 16.63 15.98 16.84 15.4C17.05 14.81 17.05 14.31 16.99 14.21C16.93 14.1 16.76 14.04 16.51 13.92C16.26 13.79 15.03 13.19 14.8 13.11C14.58 13.02 14.41 12.98 14.25 13.23C14.08 13.48 13.61 14.04 13.46 14.21C13.32 14.37 13.17 14.39 12.92 14.27C12.67 14.14 11.87 13.88 10.92 13.03C10.18 12.37 9.68 11.56 9.54 11.31C9.39 11.06 9.52 10.93 9.65 10.8C9.76 10.69 9.9 10.51 10.02 10.36C10.15 10.22 10.19 10.12 10.27 9.95C10.35 9.79 10.31 9.64 10.25 9.52C10.19 9.4 9.72 8.24 9.52 7.77C9.33 7.31 9.14 7.37 8.99 7.36C8.85 7.36 8.69 7.33 8.53 7.33Z"/></svg>
+              Direct WhatsApp Concierge
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        &copy; 2026 AUTOSAT Nigeria Ltd. Registered with CAC Nigeria (RC: 1894201). All rights reserved.
+      </div>
+      <div style="display: flex; gap: 1.5rem;">
+        <a href="#visit" style="color: var(--text-dim); text-decoration: none;">Privacy Policy</a>
+        <a href="#visit" style="color: var(--text-dim); text-decoration: none;">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vehicle Details Lightbox Modal -->
+  <div class="modal-overlay" id="vehicle-modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="close-vehicle-modal" aria-label="Close Modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div id="vehicle-modal-body">
+        <!-- Rendered by inventory.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Book a Visit Appointment Modal -->
+  <div class="modal-overlay" id="booking-modal" aria-hidden="true">
+    <div class="modal-card" style="max-width: 520px; padding: clamp(1.8rem, 4vw, 2.5rem);">
+      <button class="modal-close-btn" id="close-booking-modal" aria-label="Close Modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      
+      <span class="eyebrow-serif" style="margin-bottom: 0.5rem; display: block;">Book A Visit</span>
+      <h3 class="text-card-title" style="margin-bottom: 0.5rem;">Visit Our Showroom</h3>
+      <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.5rem;">
+        Come see the car in person, inspect all papers, and take your time. There is zero pressure to buy.
+      </p>
+
+      <form id="booking-form">
+        <div class="form-group">
+          <label for="book-name" class="form-label">Your Full Name</label>
+          <input type="text" id="book-name" class="form-control" required placeholder="Babatunde Adeleke" />
+        </div>
+
+        <div class="form-group">
+          <label for="book-phone" class="form-label">Phone Number / WhatsApp</label>
+          <input type="tel" id="book-phone" class="form-control" required placeholder="0809 000 7728" />
+        </div>
+
+        <div class="form-group">
+          <label for="booking-vehicle" class="form-label">Car You Want to See</label>
+          <input type="text" id="booking-vehicle" class="form-control" value="Porsche 911 GT3 Touring" />
+        </div>
+
+        <div class="form-group">
+          <label for="book-date" class="form-label">Day &amp; Time You’d Like to Visit</label>
+          <input type="datetime-local" id="book-date" class="form-control" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;" id="btn-confirm-booking">
+          Confirm Your Showroom Visit
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
