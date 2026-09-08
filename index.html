@@ -73,23 +73,35 @@
   <!-- Mobile Navigation Drawer -->
   <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
   <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
-    <div style="display: flex; flex-direction: column; gap: 2rem;">
-      <div style="display: flex; align-items: center; gap: 0.85rem;">
-        <img src="/logo.png" alt="AUTOSAT" width="42" height="42" style="border-radius: 50%; object-fit: contain;" />
-        <span class="brand-wordmark" style="font-size: 1.5rem;">AUTOSAT</span>
+    <div class="mobile-drawer-top">
+      <div class="mobile-drawer-header">
+        <a href="#hero" class="brand-logo" id="mobile-brand-link">
+          <img src="/logo.png" alt="AUTOSAT" width="34" height="34" style="border-radius: 50%; object-fit: contain;" />
+          <span class="brand-wordmark" style="font-size: 1.25rem;">AUTOSAT</span>
+        </a>
+        <button class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close Navigation Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
       </div>
-      <span class="eyebrow-serif" style="font-size: 0.72rem;">Satisfying Automobile Desire</span>
+
+      <div style="margin-bottom: 1.5rem;">
+        <span class="eyebrow-serif" style="font-size: 0.7rem;">Satisfying Automobile Desire</span>
+      </div>
+
       <ul class="mobile-links">
-        <li><a href="#inventory" class="mobile-link">Our Cars</a></li>
-        <li><a href="#why-us" class="mobile-link">Why Choose Us</a></li>
-        <li><a href="#founder" class="mobile-link">About Us &amp; Founder</a></li>
-        <li><a href="#services" class="mobile-link">Our Services</a></li>
-        <li><a href="#reviews" class="mobile-link">Customer Reviews</a></li>
-        <li><a href="#visit" class="mobile-link">Visit Lagos Showroom</a></li>
+        <li><a href="#inventory" class="mobile-link"><span>Our Cars</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></li>
+        <li><a href="#why-us" class="mobile-link"><span>Why Choose Us</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></li>
+        <li><a href="#founder" class="mobile-link"><span>About Us &amp; Founder</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></li>
+        <li><a href="#services" class="mobile-link"><span>Our Services</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></li>
+        <li><a href="#reviews" class="mobile-link"><span>Customer Reviews</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></li>
+        <li><a href="#visit" class="mobile-link"><span>Visit Lagos Showroom</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></li>
       </ul>
     </div>
 
-    <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+    <div class="mobile-drawer-bottom">
       <button class="btn btn-primary trigger-booking-modal" style="width: 100%;">
         Book a Showroom Visit
       </button>
@@ -98,8 +110,14 @@
         WhatsApp Concierge
       </button>
       <div style="display: flex; gap: 0.75rem; justify-content: center; margin-top: 0.5rem;">
-        <a href="https://instagram.com/autosat.ng" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" style="flex: 1; font-size: 0.8rem;">Instagram</a>
-        <a href="https://tiktok.com/@autosat.ng" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" style="flex: 1; font-size: 0.8rem;">TikTok</a>
+        <a href="https://instagram.com/autosat.ng" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" style="flex: 1; font-size: 0.8rem; display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          Instagram
+        </a>
+        <a href="https://tiktok.com/@autosat.ng" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" style="flex: 1; font-size: 0.8rem; display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.45a8.16 8.16 0 0 0 4.77 1.52V7.52a4.83 4.83 0 0 1-1-.83z"/></svg>
+          TikTok
+        </a>
       </div>
     </div>
   </aside>
@@ -358,12 +376,12 @@
           </div>
 
           <!-- Social Links Strip -->
-          <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 1.25rem; margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div class="showroom-channels-strip" style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 1.25rem; margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
             <div>
               <span class="text-meta" style="color: var(--accent-coral);">Follow Our Channels</span>
               <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.2rem;">Watch video walkarounds &amp; fresh arrivals</p>
             </div>
-            <div style="display: flex; gap: 0.75rem;">
+            <div class="showroom-channels-btns" style="display: flex; gap: 0.75rem;">
               <a href="https://instagram.com/autosat.ng" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" style="display: inline-flex; align-items: center; gap: 0.5rem;">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                 Instagram
@@ -429,8 +447,8 @@
               <textarea id="form-message" rows="3" class="form-control" placeholder="Tell us what you need or when you'd like to visit..."></textarea>
             </div>
 
-            <div style="display: flex; gap: 1rem; align-items: center; margin-top: 1.5rem;">
-              <button type="submit" class="btn btn-primary" id="btn-submit-contact" style="flex: 1;">
+            <div class="contact-actions-row">
+              <button type="submit" class="btn btn-primary" id="btn-submit-contact">
                 Send Message
               </button>
               <button type="button" class="btn btn-secondary trigger-whatsapp" title="Chat on WhatsApp">

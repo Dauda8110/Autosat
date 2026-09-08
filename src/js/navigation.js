@@ -33,8 +33,18 @@ export function initNavigation() {
     }
   };
 
+  const closeBtn = document.getElementById('mobile-drawer-close');
+
   toggle?.addEventListener('click', () => toggleMenu());
   backdrop?.addEventListener('click', () => toggleMenu(false));
+  closeBtn?.addEventListener('click', () => toggleMenu(false));
+
+  // Close mobile drawer on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && drawer?.classList.contains('open')) {
+      toggleMenu(false);
+    }
+  });
 
   // Close mobile drawer on link click
   navLinks.forEach(link => {
